@@ -3,7 +3,7 @@ const sec_frame = [
 ];
 
 const btn_main = document.querySelector('.btn-main');
-const data_prom = fetch('/data.json').then(data => data.json());
+const data_prom = fetch('https://dsuhov.github.io/msceit/data.json').then(data => data.json());
 let curr_sec = 0;
 
 /********************************************************************/
