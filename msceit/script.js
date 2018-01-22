@@ -4,7 +4,7 @@
   var sec_frame = [{ section: "sectionA", tasks: 4, params: 5 }, { section: "sectionB", tasks: 5, params: 3 }, { section: "sectionC", tasks: 20, params: 1 }, { section: "sectionD", tasks: 5, params: 4 }, { section: "sectionE", tasks: 6, params: 5 }, { section: "sectionF", tasks: 5, params: 3 }, { section: "sectionG", tasks: 12, params: 1 }, { section: "sectionH", tasks: 3, params: 3 }];
 
   var btn_main = document.querySelector('.btn-main');
-  var data_prom = fetch('https://dsuhov.github.io/msceit/data.json').then(function (data) {
+  var data_prom = fetch('https://dsuhov.github.io/msceit/data.json/data.json').then(function (data) {
     return data.json();
   });
   var curr_sec = 0;
@@ -111,7 +111,6 @@
     all_tasks.splice(0, 1);
 
     var inHTML = '';
-    inHTML += '<h3 class="centering">Спасибо за то, что вы ответили на вопросы!</h3>';
 
     sec_frame.forEach(function (obj) {
 
@@ -123,7 +122,7 @@
       }, []);
 
       // TODO: test presence of new line characters between sections code
-
+      inHTML += '<h3 class="centering">Спасибо за то, что вы ответили на вопросы!</h3>';
       inHTML += renderSection(obj.section.slice(-1), arr);
     });
     document.body.innerHTML = inHTML;
@@ -230,12 +229,12 @@
 
       case 'E':
         {
-          var _html_string4 = "<table class=\"final-block centering\">\n          <caption>\u041A\u0430\u0440\u0442\u0438\u043D\u0430 " + section + "</caption>";
+          var _html_string4 = "<table class=\"final-block centering\">\n          <caption>\u0421\u0435\u043A\u0446\u0438\u044F " + section + "</caption>";
 
           _html_string4 += '<tr>';
           _html_string4 += '<th></th>';
           for (var _i8 = 0; _i8 < answers.length; _i8++) {
-            _html_string4 += "<th>\u041B\u0438\u0446\u043E " + String(_i8 + 1) + "</th>";
+            _html_string4 += "<th>\u041A\u0430\u0440\u0442\u0438\u043D\u0430 " + String(_i8 + 1) + "</th>";
           }_html_string4 += '</tr>';
 
           var _loop4 = function _loop4(_i9) {
