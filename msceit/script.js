@@ -111,6 +111,7 @@
     all_tasks.splice(0, 1);
 
     var inHTML = '';
+    inHTML += '<h3 class="centering">Спасибо за то, что вы ответили на вопросы!</h3>';
 
     sec_frame.forEach(function (obj) {
 
@@ -122,7 +123,7 @@
       }, []);
 
       // TODO: test presence of new line characters between sections code
-      inHTML += '<h3 class="centering">Спасибо за то, что вы ответили на вопросы!</h3>';
+
       inHTML += renderSection(obj.section.slice(-1), arr);
     });
     document.body.innerHTML = inHTML;
