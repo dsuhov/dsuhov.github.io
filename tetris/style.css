@@ -1,0 +1,65 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  position: relative;
+}
+
+.game {
+  width: 520px;
+  padding-top: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+
+#tetrisField {
+  float: left;
+}
+
+.info {
+  position: relative;
+  font-family: 'VT323', monospace;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 25px;
+  float: right;
+}
+
+.info span {
+  display: block;
+}
+
+.info > * {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+#nextBlock {
+  padding-top: 10px;
+}
+
+.dummy {
+  font-family: 'VT323', monospace;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 50px;
+  line-height: 60px;
+  padding: 0 20px;
+  background-color: rgba(50, 50, 50, 0.5);
+  position: absolute;
+  top:45%;
+  left: 29%;
+  transform: translateX(-50%);
+  border: 1px solid black;
+  box-shadow: 2px 2px 5px 2px #4d4b4b;
+}
+
+.hidden {
+  display: none;
+}
