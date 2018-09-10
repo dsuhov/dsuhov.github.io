@@ -188,7 +188,7 @@ ul {
     .content-section__weather-indicator--rain {
       position: relative;
       top: 4px;
-      background: transparent url(../assets/cloud-drizzle.png) no-repeat;
+      background: transparent url(../assets/cloud-drizzle.svg) no-repeat;
       background-size: 100%; }
   .content-section__favorite-devices-wrapper {
     height: 120px;
@@ -257,7 +257,7 @@ ul {
         position: relative;
         top: 6px;
         background-size: 100%;
-        background: transparent url(../assets/cloud-drizzle.png) no-repeat; }
+        background: transparent url(../assets/cloud-drizzle.svg) no-repeat; }
     .content-section__favorite-devices-wrapper {
       height: auto;
       width: 200px;
@@ -286,7 +286,7 @@ ul {
     background: url(../assets/bg@2x.png) center no-repeat;
     background-size: 200%; }
   .content-section__weather-indicator--rain {
-    background: transparent url(../assets/cloud-drizzle@2x.png) no-repeat;
+    background: transparent url(../assets/cloud-drizzle@2x.svg) no-repeat;
     background-size: 100%; } }
 
 .device {
