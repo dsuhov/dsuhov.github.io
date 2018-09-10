@@ -4,7 +4,7 @@
   var sec_frame = [{ section: "sectionA", tasks: 4, params: 5 }, { section: "sectionB", tasks: 5, params: 3 }, { section: "sectionC", tasks: 20, params: 1 }, { section: "sectionD", tasks: 5, params: 4 }, { section: "sectionE", tasks: 6, params: 5 }, { section: "sectionF", tasks: 5, params: 3 }, { section: "sectionG", tasks: 12, params: 1 }, { section: "sectionH", tasks: 3, params: 3 }];
 
   var btn_main = document.querySelector('.btn-main');
-  var data_prom = fetch('https://dsuhov.github.io/msceit/data.json/data.json').then(function (data) {
+  var data_prom = fetch('https://dsuhov.github.io/msceit/data.json').then(function (data) {
     return data.json();
   });
   var curr_sec = 0;
