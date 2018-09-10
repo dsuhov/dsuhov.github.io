@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Яндекс Дом</title>
+</head>
+<body>
+  
+  <div class="main-wrapper blur-wrapper">
+    <header class="main-header main-header--close">
+      <nav class="main-nav main-nav--no-js">
+        
+        <div class="main-nav__top-wrapper">
+          <a href="#" class="main-nav__logo">
+            <img src="assets/yandex_home.svg">
+          </a>
+          
+          <button class="main-nav__toggle_btn" type="button"></button>
+        </div>
+        
+        
+        <ul class="main-nav__list">
+          <li class="main-nav__list-item main-nav__list-item--active">
+            <a href="#">Сводка</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="#">Устройства</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a href="#">Сценарии</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main class="main-content">
+      <div class="primary-favorite-wrapper">
+        <section class="content-section">
+          <h2 class="content-section__header header">Главное</h2>
+          <div class="content-section__primary">
+            <div class="content-section__info">
+              <h3 class="content-section__greetings">Привет, Геннадий!</h3>
+              <p class="content-section__home-info">Двери и окна закрыты, сигнализация включена.</p>
+              <div class="content-section__temp">
+                <div class="content-section__temp-location">Дома</div>
+                <div class="content-section__curr-temp">+23</div>
+              </div>
+              <div class="content-section__temp">
+                <div class="content-section__temp-location">За окном</div>
+                <div class="content-section__curr-temp"><span>+19</span>
+                  <div class="content-section__weather-indicator content-section__weather-indicator--rain"></div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="content-section__favorite-devices-wrapper">
+              <ul class="content-section__favorite-devices">
+                <li class="content-section__device-item">
+                  <div class="device">
+                    <div class="device__indicator device__indicator--temp"></div>
+                    <h3 class="device__name">Philips Cooler</h3>
+                    <span class="device__task">Начнет охлаждать в 16:30</span>
+                  </div> 
+                </li>
+                <li class="content-section__device-item">
+                  <div class="device" data-device_name="Xiaomi Yeelight LED Smart Bulb">
+                    <div class="device__indicator device__indicator--sun--off"></div>
+                    <h3 class="device__name">Xiaomi Yeelight LED Smart Bulb</h3>
+                    <span class="device__task">Включится в 17:00</span>
+                  </div>
+                </li>
+                <li class="content-section__device-item">
+                  <div class="device"></div>
+                </li>
+              </ul>  
+            </div>
+          </div>
+        </section>
+        
+        <section class="favorite-scenarios">
+          <h2 class="favorite-scenarios__header header">Избранные сценарии</h2>
+          <div class="favorite-scenarios__controls">
+            <div class="favorite-scenarios__left-ctrl"></div>
+            <div class="favorite-scenarios__right-ctrl"></div>
+          </div>
+          
+          <ul class="favorite-scenarios__columns favorite-scenarios__columns--no-js">
+            <li class="favorite-scenarios__item">
+              <div class="scenario">
+                <div class="scenario__indicator scenario__indicator--sun--on"></div>
+                <h3 class="scenario__name">Выключить весь свет в доме и во дворе</h3>
+              </div>
+            </li>
+            <li class="favorite-scenarios__item">
+              <div class="scenario">
+                <div class="scenario__indicator scenario__indicator--clock--off"></div>
+                <h3 class="scenario__name">Я ухожу</h3>
+              </div>
+            </li>
+            <li class="favorite-scenarios__item">
+              <div class="scenario">
+                <div class="scenario__indicator scenario__indicator--sun--on"></div>
+                <h3 class="scenario__name">Включить свет <br/> в коридоре</h3>
+              </div>
+            </li>
+            <li class="favorite-scenarios__item">
+              <div class="scenario">
+                <div class="scenario__indicator scenario__indicator--temp--on"></div>
+                <h3 class="scenario__name">Набрать горячую ванну</h3>
+                <span class="scenario__task">Начнётся в 18:00</span>
+              </div>
+            </li>
+            <li class="favorite-scenarios__item">
+              <div class="scenario">
+                <div class="scenario__indicator scenario__indicator--temp--on"></div>
+                <h3 class="scenario__name">Сделать пол тёплым во всей квартире</h3>
+              </div>
+            </li>
+            <li class="favorite-scenarios__item">
+              <div class="scenario">
+                <div class="scenario__indicator scenario__indicator--clock--off"></div>
+                <h3 class="scenario__name">Я ухожу</h3>
+              </div>
+            </li>
+            <li class="favorite-scenarios__item">
+              <div class="scenario">
+                <div class="scenario__indicator scenario__indicator--sun--on"></div>
+                <h3 class="scenario__name">Включить свет <br/> в коридоре</h3>
+              </div>
+            </li>
+            <li class="favorite-scenarios__item">
+              <div class="scenario">
+                <div class="scenario__indicator scenario__indicator--temp--on"></div>
+                <h3 class="scenario__name">Набрать горячую ванну</h3>
+                <span class="scenario__task">Начнётся в 18:00</span>
+              </div>
+            </li>
+            <li class="favorite-scenarios__item">
+              <div class="scenario">
+                <div class="scenario__indicator scenario__indicator--temp--on"></div>
+                <h3 class="scenario__name">Сделать пол тёплым во всей квартире</h3>
+              </div>
+            </li>
+            <li class="favorite-scenarios__item">
+              <div class="scenario">
+                <div class="scenario__indicator scenario__indicator--clock--off"></div>
+                <h3 class="scenario__name">Я ухожу</h3>
+              </div>
+            </li>
+            <li class="favorite-scenarios__item">
+              <div class="scenario">
+                <div class="scenario__indicator scenario__indicator--sun--on"></div>
+                <h3 class="scenario__name">Включить свет <br/> в коридоре</h3>
+              </div>
+            </li>
+            <li class="favorite-scenarios__item">
+              <div class="scenario">
+                <div class="scenario__indicator scenario__indicator--temp--on"></div>
+                <h3 class="scenario__name">Набрать горячую ванну</h3>
+                <span class="scenario__task">Начнётся в 18:00</span>
+              </div>
+            </li>
+            <li class="favorite-scenarios__item">
+              <div class="scenario">
+                <div class="scenario__indicator scenario__indicator--temp--on"></div>
+                <h3 class="scenario__name">Сделать пол тёплым во всей квартире</h3>
+              </div>
+            </li>
+            <li class="favorite-scenarios__item">
+              <div class="scenario">
+                <div class="scenario__indicator scenario__indicator--clock--off"></div>
+                <h3 class="scenario__name">Я ухожу</h3>
+              </div>
+            </li>
+            <li class="favorite-scenarios__item">
+              <div class="scenario">
+                <div class="scenario__indicator scenario__indicator--sun--on"></div>
+                <h3 class="scenario__name">Включить свет <br/> в коридоре</h3>
+              </div>
+            </li>
+            <li class="favorite-scenarios__item">
+              <div class="scenario">
+                <div class="scenario__indicator scenario__indicator--temp--on"></div>
+                <h3 class="scenario__name">Набрать горячую ванну</h3>
+                <span class="scenario__task">Начнётся в 18:00</span>
+              </div>
+            </li>
+            <li class="favorite-scenarios__item">
+              <div class="scenario">
+                <div class="scenario__indicator scenario__indicator--temp--on"></div>
+                <h3 class="scenario__name">Сделать пол тёплым во всей квартире</h3>
+              </div>
+            </li>
+            
+          </ul>
+          
+        </section>
+      </div>
+      
+      <section class="favorite-devices">
+        <div class="favorite-devices__top">
+          <h2 class="favorite-devices__header header">Избранные устройства</h2>
+          <select name="favorite-devices__filters-select" class="favorite-devices__filters-select">
+            <option value="1" class="favorite-devices__select-item">Все</option>
+            <option value="2" class="favorite-devices__select-item">Кухня</option>
+            <option value="3" class="favorite-devices__select-item">Зал</option>
+            <option value="4" class="favorite-devices__select-item">Лампочки</option>
+            <option value="5" class="favorite-devices__select-item">Камеры</option>
+          </select>
+          
+          <ul class="favorite-devices__filters">
+            <li class="favorite-devices__filter-item favorite-devices__filter-item--active">Все</li>
+            <li class="favorite-devices__filter-item">Кухня</li>
+            <li class="favorite-devices__filter-item">Зал</li>
+            <li class="favorite-devices__filter-item">Лампочки</li>
+            <li class="favorite-devices__filter-item">Камеры</li>
+          </ul>
+          <div class="favorite-devices__controls">
+            <div class="favorite-devices__left-ctrl"></div>
+            <div class="favorite-devices__right-ctrl"></div>
+          </div>
+        </div>
+        
+        <div class="favorite-devices__scrollbar-container">
+          <ul class="favorite-devices__scrollbar">
+            <li class="favorite-devices__device-item">
+              <div class="device" data-device_name="Xiaomi Yeelight LED Smart Bulb">
+                <div class="device__indicator device__indicator--sun--on"></div>
+                <h3 class="device__name">Xiaomi Yeelight LED Smart Bulb</h3>
+                <span class="device__task">Включено</span>
+              </div>
+            </li>
+            <li class="favorite-devices__device-item">
+                <div class="device" data-device_name="Xiaomi Warm Floor">
+                  <div class="device__indicator device__indicator--temp--on"></div>
+                  <h3 class="device__name">Xiaomi Warm Floor</h3>
+                  <span class="device__task">Включено</span>
+                </div>
+              </li>
+            <li class="favorite-devices__device-item">
+              <div class="device">
+                <div class="device__indicator device__indicator--sun--off"></div>
+                <h3 class="device__name">D-Link Omna 180 Cam</h3>
+                <span class="device__task">Включится в 17:00</span>
+              </div>
+            </li>
+            <li class="favorite-devices__device-item">
+              <div class="device"  data-device_name="Elgato Eve Degree Connected">
+                <div class="device__indicator device__indicator--temp"></div>
+                <h3 class="device__name">Elgato Eve Degree Connected</h3>
+                <span class="device__task">Выключено до 17:00</span>
+              </div>
+            </li>
+            <li class="favorite-devices__device-item">
+              <div class="device">
+                <div class="device__indicator device__indicator--sun--off"></div>
+                <h3 class="device__name">LIFX Mini Day & Dusk A60 E27</h3>
+                <span class="device__task">Включится в 17:00</span>
+              </div>
+            </li>
+            <li class="favorite-devices__device-item">
+              <div class="device">
+                <div class="device__indicator device__indicator--sun--on"></div>
+                <h3 class="device__name">Xiaomi Mi Air Purifier 2S</h3>
+                <span class="device__task">Включено</span>
+              </div>
+            </li>
+            <li class="favorite-devices__device-item">
+              <div class="device">
+                <div class="device__indicator device__indicator--sun--off"></div>
+                <h3 class="device__name">Philips Zhirui</h3>
+                <span class="device__task">Выключено</span>
+              </div>
+            </li>
+            <li class="favorite-devices__device-item">
+              <div class="device" data-device_name="Xiaomi Yeelight LED Smart Bulb">
+                <div class="device__indicator device__indicator--sun--off"></div>
+                <h3 class="device__name">Xiaomi Yeelight LED Smart Bulb</h3>
+                <span class="device__task">Включится в 17:00</span>
+              </div>
+            </li>
+            
+          </ul>
+        </div>
+        
+      </section>
+    </main>
+    
+    <footer class="main-footer">
+      <div class="main-footer__summary">
+        <ul class="main-footer__list">
+          <li><a href="#">Помощь</a></li>
+          <li><a href="#">Обратная связь</a></li>
+          <li><a href="#">Разрабочикам</a></li>
+          <li><a href="#">Условия использования</a></li>
+        </ul>
+      </div>
+      <div class="main-footer__credits"><span>© 2001–2017  ООО «Яндекс»</span></div>
+    </footer>
+  </div>
+
+  <div class="popups-content">
+    <article class='popup-light'>
+      <div class="popup-light__main">
+          <h3 class="popup-light__header">Xiaomi Yeelight LED Smart Bulb</h3>
+          <h4 class="popup-light__task">Включится в 17:00</h4>
+    
+          <div class="popup-light__presets-scroll-wrapper">
+              <!-- ie is strange, looses ul styles -->
+            <ul class="popup-light__presets" style="list-style: none;">
+              <li class="popup-light__preset-item popup-light__preset-item--active">Вручную</li>
+              <li class="popup-light__preset-item">Дневной свет</li>
+              <li class="popup-light__preset-item">Вечерний свет</li>
+              <li class="popup-light__preset-item">Рассвет</li>
+            </ul>
+          </div>
+          <div class="popup-light__slider">
+            <div class="popup-light__thumb"> 
+            </div>
+          </div>
+      </div>
+      <div class="popup-light__controls">
+        <button class="popup-light__submit">Применить</button>
+        <button class="popup-light__close">Закрыть</button>
+      </div>
+    </article>
+    
+    <article class='popup-temp'>
+        <div class="popup-temp__main">
+            <h3 class="popup-temp__header">Elgato Eve Degree Connected</h3>
+            <h4 class="popup-temp__task">Включено</h4>
+
+            <div class="popup-temp__actual-temp">+23</div>
+      
+            <div class="popup-temp__presets-scroll-wrapper">
+                <!-- ie is strange, looses ul styles -->
+              <ul class="popup-temp__presets" style="list-style: none;">
+                <li class="popup-temp__preset-item popup-temp__preset-item--active">Вручную</li>
+                <li class="popup-temp__preset-item">Холодно</li>
+                <li class="popup-temp__preset-item">Тепло</li>
+                <li class="popup-temp__preset-item">Жарко</li>
+              </ul>
+            </div>
+            <div class="popup-temp__slider">
+              <div class="popup-temp__thumb"> 
+              </div>
+            </div>
+        </div>
+  
+        <div class="popup-temp__controls">
+          <button class="popup-temp__submit">Применить</button>
+          <button class="popup-temp__close">Закрыть</button>
+        </div>
+      </article>
+
+      <article class='popup-floor'>
+          <div class="popup-floor__main">
+            <header class="popup-floor__header-wrap">
+                <h3 class="popup-floor__header">Xiaomi Warm Floor</h3>
+                <h4 class="popup-floor__task">Включено</h4>
+
+                <div class="popup-floor__indicator">
+                  <span class="popup-floor__actual-temp">+23</span>
+                </div>
+            </header>
+
+            <div class="popup-floor__setter">
+              <div class="popup-floor__disk">
+                <span class="popup-floor__disk-temp">+23</span>
+                <div class="popup-floor__pointer">
+                    <svg height="8" width="16">
+                      <polygon points="0,0 8,8 16,0" />
+                    </svg>
+                </div>
+              </div>
+              <!-- <div class="popup-floor__notch"></div> -->
+            </div>
+
+          </div>
+    
+          <div class="popup-floor__controls">
+            <button class="popup-floor__submit">Применить</button>
+            <button class="popup-floor__close">Закрыть</button>
+          </div>
+        </article>
+  </div>
+  
+  <script src="script.js" type="text/javascript"></script>
+  <!-- <script src="highlighter.js"  type="text/javascript"></script> -->
+</body>
+</html>
