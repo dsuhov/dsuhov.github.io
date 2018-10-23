@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title></title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/main.css"><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="main-nav">
+          <div class="main-nav__fx-wrapper">
+            <input class="main-nav__checkbox" type="checkbox" id="toggle-btn" checked>
+            <label class="main-nav__button" for="toggle-btn" title="Показать / Скрыть меню"><svg class="main-nav__svg--cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.2 22.2"><path d="M22.2 2.8L19.4 0l-8.3 8.3L2.8 0 0 2.8l8.3 8.3L0 19.4l2.8 2.8 8.3-8.3 8.3 8.3 2.8-2.8-8.3-8.3z"/></svg><svg   class="main-nav__svg--burger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.9 22"><path d="M0 0h22.9v4H0zM0 9h22.9v4H0zM0 18h22.9v4H0z"/></svg></label>
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фото и видео</a></li>
+              <li class="main-nav__item main-nav__item--left-m"><a class="main-nav__link" href="form.html">Форма отзыва</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+            </ul>
+            <div class="logo main-nav__logo"><a class="logo__link" href="index.html" alt="Welcome to Sedona">
+                <picture>
+                  <source media="(min-width: 1280px)" srcset="./img/general/logo-2.svg"><img class="logo__img" src="./img/general/logo.svg" alt="Welcome to Sedona">
+                </picture></a></div>
+          </div>
+        </nav>
+        <section class="greetings greetings--pages"><img class="greetings__text" src="img/general/text-pages.svg" alt="Добро пожаловать в седону"></section>
+      </header>
+      <main class="main-form">
+        <div class="heading">
+          <h1 class="heading__main">Оставьте свой отзыв</h1>
+          <h3 class="heading__descr">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</h3>
+        </div>
+        <form class="sedona-form" action="./" method="get">
+          <div class="sedona-form__top-block">
+            <fieldset class="sedona-form__field sedona-form__field-1 u-border-right">
+              <legend class="sedona-form__legend">
+                <h4 class="sedona-form__heading">Ваше общее впечатление:</h4>
+              </legend>
+              <div class="sedona-form__input-container">
+                <input class="sedona-form__input-radio" type="radio" name="impression" id="positive" value="positive" checked="checked"/>
+                <label class="sedona-form__input-label" for="positive"></label><span class="sedona-form__input-content">Скорее положительное</span>
+              </div>
+              <div class="sedona-form__input-container">
+                <input class="sedona-form__input-radio" type="radio" name="impression" id="negative" value="negative"/>
+                <label class="sedona-form__input-label" for="negative"></label><span class="sedona-form__input-content">Скорее отрицательное</span>
+              </div>
+              <div class="sedona-form__input-container">
+                <input class="sedona-form__input-radio" type="radio" name="impression" id="neutral" value="neutral"/>
+                <label class="sedona-form__input-label" for="neutral"></label><span class="sedona-form__input-content">Затрудняюсь ответить</span>
+              </div>
+            </fieldset>
+            <fieldset class="sedona-form__field sedona-form__field-2">
+              <legend class="sedona-form__legend">
+                <h4 class="sedona-form__heading">Представьтесь:</h4>
+              </legend>
+              <div class="sedona-form__input-container">
+                <label class="sedona-form__input-label" for="name">Имя<sup>&lowast;</sup>:</label>
+                <input class="sedona-form__input-text" type="text" placeholder="Петр" name="name" id="name"/>
+              </div>
+              <div class="sedona-form__input-container">
+                <label class="sedona-form__input-label" for="surname">Фамилия<sup>&lowast;</sup>:</label>
+                <input class="sedona-form__input-text" type="text" placeholder="Иванов" name="surname" id="surname"/>
+              </div>
+              <div class="sedona-form__input-container">
+                <label class="sedona-form__input-label" for="patronymic">Отчество:</label>
+                <input class="sedona-form__input-text" type="text" placeholder="Александрович" name="patronymic" id="patronymic"/>
+              </div>
+            </fieldset>
+          </div>
+          <fieldset class="sedona-form__field sedona-form__field-3 u-border-top-2">
+            <legend class="sedona-form__legend">
+              <h4 class="sedona-form__heading">Контактная информация:</h4>
+            </legend>
+            <div class="sedona-form__input-container">
+              <label class="sedona-form__input-label" for="phone-number">Телефон<sup>&lowast;</sup>:</label>
+              <div class="sedona-form__input-text-container">
+                <input class="sedona-form__input-text" type="tel" placeholder="Введите телефон" name="phone-number" id="phone-number"><span class="sedona-form__input-icon sedona-form__input-icon--phone">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+                    <path path d="M3.6 7.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V17c0 .6-.4 1-1 1C7.6 18 0 10.4 0 1c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1L3.6 7.8z" fill="#010101"></path>
+                  </svg></span>
+              </div>
+            </div>
+            <div class="sedona-form__input-container">
+              <label class="sedona-form__input-label" for="email">Электронная&nbsp;почта<sup>&lowast;</sup>:</label>
+              <div class="sedona-form__input-text-container">
+                <input class="sedona-form__input-text" type="email" placeholder="Введите e-mail" name="email" id="email"><span class="sedona-form__input-icon sedona-form__input-icon--email">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 2 16 12">
+                    <path path d="M8 10c-.3 0-.5-.1-1-.3L0 6v7c0 .5.5 1 1 1h14c.5 0 1-.5 1-1V6L9 9.7c-.5.2-.7.3-1 .3zm7-8H1c-.5 0-1 .5-1 1v.8L8 8l8-4.2V3c0-.5-.5-1-1-1z" fill="#010101"></path>
+                  </svg></span>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="sedona-form__field sedona-form__field-4 u-border-top-2">
+            <legend class="sedona-form__legend">
+              <h4 class="sedona-form__heading">Посещенные достопримечательности:</h4>
+            </legend>
+            <div class="sedona-form__input-container">
+              <input class="sedona-form__input-checkbox" type="checkbox" name="bridge" id="bridge" value="bridge" checked>
+              <label class="sedona-form__input-label" for="bridge">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 16.2">
+                  <path path d="M22.8 1.3L21.7.2c-.3-.3-.9-.3-1.2 0L8.7 12.1 2.5 5.9c-.3-.3-.9-.3-1.2 0L.2 7c-.3.3-.3.9 0 1.2L8.1 16c.2.2.4.2.6.2.2 0 .4-.1.6-.2L22.8 2.5c.3-.3.3-.9 0-1.2z" fill="#010101"></path>
+                </svg>
+              </label><span class="sedona-form__input-content">Мост Дьявола</span>
+            </div>
+            <div class="sedona-form__input-container">
+              <input class="sedona-form__input-checkbox" type="checkbox" name="mountain" id="mountain" value="mountain" checked>
+              <label class="sedona-form__input-label" for="mountain">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 16.2">
+                  <path path d="M22.8 1.3L21.7.2c-.3-.3-.9-.3-1.2 0L8.7 12.1 2.5 5.9c-.3-.3-.9-.3-1.2 0L.2 7c-.3.3-.3.9 0 1.2L8.1 16c.2.2.4.2.6.2.2 0 .4-.1.6-.2L22.8 2.5c.3-.3.3-.9 0-1.2z" fill="#010101"></path>
+                </svg>
+              </label><span class="sedona-form__input-content">Гора-Колокол</span>
+            </div>
+            <div class="sedona-form__input-container">
+              <input class="sedona-form__input-checkbox" type="checkbox" name="park" id="park" value="park" checked>
+              <label class="sedona-form__input-label" for="park">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 16.2">
+                  <path path d="M22.8 1.3L21.7.2c-.3-.3-.9-.3-1.2 0L8.7 12.1 2.5 5.9c-.3-.3-.9-.3-1.2 0L.2 7c-.3.3-.3.9 0 1.2L8.1 16c.2.2.4.2.6.2.2 0 .4-.1.6-.2L22.8 2.5c.3-.3.3-.9 0-1.2z" fill="#010101"></path>
+                </svg>
+              </label><span class="sedona-form__input-content">Слайд Парк</span>
+            </div>
+            <div class="sedona-form__input-container">
+              <input class="sedona-form__input-checkbox" type="checkbox" name="rocks" id="rocks" value="rocks">
+              <label class="sedona-form__input-label" for="rocks">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 16.2">
+                  <path path d="M22.8 1.3L21.7.2c-.3-.3-.9-.3-1.2 0L8.7 12.1 2.5 5.9c-.3-.3-.9-.3-1.2 0L.2 7c-.3.3-.3.9 0 1.2L8.1 16c.2.2.4.2.6.2.2 0 .4-.1.6-.2L22.8 2.5c.3-.3.3-.9 0-1.2z" fill="#010101"></path>
+                </svg>
+              </label><span class="sedona-form__input-content">Красные Скалы</span>
+            </div>
+          </fieldset>
+          <fieldset class="sedona-form__field sedona-form__field-5 u-border-top-2">
+            <legend class="sedona-form__legend">
+              <h4 class="sedona-form__heading">Опишите свои эмоции:</h4>
+            </legend>
+            <textarea class="sedona-form__input-text sedona-form__textarea" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
+          </fieldset>
+          <div class="sedona-form__footer">
+            <input class="sedona-form__footer-submit" type="submit" name="sumbit" value="Отправить отзыв"><span class="sedona-form__footer-hint"><sup>&lowast;</sup> — Обязательные поля</span>
+          </div>
+        </form>
+      </main>
+      <footer class="footer column-3">
+        <div class="footer__hashtag column-3__item">
+          <h4>#visitsedona</h4>
+        </div>
+        <div class="footer__social column-3__item"><a class="footer__social-item footer__social--tw" href="#" title="twitter">
+            <svg>
+              <use xlink:href="./img/icons/symbol/sprite.svg#icon-twitter"></use>
+            </svg></a><a class="footer__social-item footer__social--fb" href="#" title="facebook">
+            <svg>
+              <use xlink:href="./img/icons/symbol/sprite.svg#icon-facebook"></use>
+            </svg></a><a class="footer__social-item footer__social--yt" href="#" title="youtube">
+            <svg>
+              <use xlink:href="./img/icons/symbol/sprite.svg#icon-youtube"></use>
+            </svg></a></div>
+        <div class="footer__group column-3__item">
+          <div class="footer__group-container">
+            <h4>Разработано</h4>
+            <div class="footer__icon">
+              <svg>
+                <use xlink:href="./img/icons/symbol/sprite.svg#htmlacademy"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

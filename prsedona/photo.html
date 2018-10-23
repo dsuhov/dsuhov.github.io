@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title></title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/main.css"><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="main-nav">
+          <div class="main-nav__fx-wrapper">
+            <input class="main-nav__checkbox" type="checkbox" id="toggle-btn" checked>
+            <label class="main-nav__button" for="toggle-btn" title="Показать / Скрыть меню"><svg class="main-nav__svg--cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.2 22.2"><path d="M22.2 2.8L19.4 0l-8.3 8.3L2.8 0 0 2.8l8.3 8.3L0 19.4l2.8 2.8 8.3-8.3 8.3 8.3 2.8-2.8-8.3-8.3z"/></svg><svg   class="main-nav__svg--burger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.9 22"><path d="M0 0h22.9v4H0zM0 9h22.9v4H0zM0 18h22.9v4H0z"/></svg></label>
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фото и видео</a></li>
+              <li class="main-nav__item main-nav__item--left-m"><a class="main-nav__link" href="form.html">Форма отзыва</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+            </ul>
+            <div class="logo main-nav__logo"><a class="logo__link" href="index.html" alt="Welcome to Sedona">
+                <picture>
+                  <source media="(min-width: 1280px)" srcset="./img/general/logo-2.svg"><img class="logo__img" src="./img/general/logo.svg" alt="Welcome to Sedona">
+                </picture></a></div>
+          </div>
+        </nav>
+        <section class="greetings greetings--pages"><img class="greetings__text" src="img/general/text-pages.svg" alt="Добро пожаловать в седону"></section>
+      </header>
+      <main class="main-photo">
+        <div class="heading">
+          <h1 class="heading__main">Фото и видео</h1>
+          <h3 class="heading__descr">Не можете решиться на путешествие из-за курса? Фотографии&nbsp;помогут вам забыть о политике и экономике.</h3>
+        </div>
+        <section class="photos">
+          <div class="photos__container">
+            <div class="photo photos__item photos__item--big u-border-top">
+              <div class="photo__container"><img class="photo__img" src="./img/general/photos/photo-1-mobile.jpg" srcset="./img/general/photos/photo-1-mobile.jpg 280w, ./img/general/photos/photo-1-tablet.jpg 648w, ./img/general/photos/photo-1-desktop.jpg 1200w" sizes="(min-width: 1200px) 100vw, (min-width: 768px) 84.3vw, 87.5vw">
+                <div class="photo__caption">
+                  <div class="photo__caption-legend">
+                    <h3 class="photo__caption-name">Неродные просторы</h3><span class="photo__caption-author">Автор фото: Борис</span>
+                  </div>
+                  <div class="photo__caption-rating"><span class="photo__caption-rating-value">1350</span>
+                    <button type="button">
+                      <svg class="photo__caption-rating-svg" viewBox="0 0 22 20">
+                        <path d="M12.4 3.6l-.6 2.9-.6 2.5h8.7v2.1L17 18H8V8l4.4-4.4M2 10v8-8M13.2 0L6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7V9h.1c0-1.1-.9-2-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1zM4 8H0v12h4V8zm18 1z"></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="photo photos__item u-border-top">
+              <div class="photo__container">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./img/general/photos/photo-2-desktop.jpg">
+                  <source media="(min-width: 768px)" srcset="./img/general/photos/photo-2-tablet.jpg"><img class="photo__img" src="./img/general/photos/photo-2-mobile.jpg">
+                </picture>
+                <div class="photo__caption">
+                  <div class="photo__caption-legend">
+                    <h3 class="photo__caption-name">Местная растительность</h3><span class="photo__caption-author">Автор фото: Сергей</span>
+                  </div>
+                  <div class="photo__caption-rating"><span class="photo__caption-rating-value">143</span>
+                    <button type="button">
+                      <svg class="photo__caption-rating-svg" viewBox="0 0 22 20">
+                        <path d="M12.4 3.6l-.6 2.9-.6 2.5h8.7v2.1L17 18H8V8l4.4-4.4M2 10v8-8M13.2 0L6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7V9h.1c0-1.1-.9-2-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1zM4 8H0v12h4V8zm18 1z"></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="photo photos__item u-border-top">
+              <div class="photo__container">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./img/general/photos/photo-3-desktop.jpg">
+                  <source media="(min-width: 768px)" srcset="./img/general/photos/photo-3-tablet.jpg"><img class="photo__img" src="./img/general/photos/photo-3-mobile.jpg">
+                </picture>
+                <div class="photo__caption">
+                  <div class="photo__caption-legend">
+                    <h3 class="photo__caption-name">Дорога на север</h3><span class="photo__caption-author">Автор фото: Петр</span>
+                  </div>
+                  <div class="photo__caption-rating"><span class="photo__caption-rating-value">96</span>
+                    <button type="button">
+                      <svg class="photo__caption-rating-svg" viewBox="0 0 22 20">
+                        <path d="M12.4 3.6l-.6 2.9-.6 2.5h8.7v2.1L17 18H8V8l4.4-4.4M2 10v8-8M13.2 0L6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7V9h.1c0-1.1-.9-2-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1zM4 8H0v12h4V8zm18 1z"></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="photo photos__item u-border-top">
+              <div class="photo__container">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./img/general/photos/photo-4-desktop.jpg">
+                  <source media="(min-width: 768px)" srcset="./img/general/photos/photo-4-tablet.jpg"><img class="photo__img" src="./img/general/photos/photo-4-mobile.jpg">
+                </picture>
+                <div class="photo__caption">
+                  <div class="photo__caption-legend">
+                    <h3 class="photo__caption-name">Мост дьявола</h3><span class="photo__caption-author">Автор фото: Антон</span>
+                  </div>
+                  <div class="photo__caption-rating"><span class="photo__caption-rating-value">254</span>
+                    <button type="button">
+                      <svg class="photo__caption-rating-svg" viewBox="0 0 22 20">
+                        <path d="M12.4 3.6l-.6 2.9-.6 2.5h8.7v2.1L17 18H8V8l4.4-4.4M2 10v8-8M13.2 0L6.6 6.6c-.4.3-.6.8-.6 1.4v10c0 1.1.9 2 2 2h9c.8 0 1.5-.5 1.8-1.2l3-7.1c.1-.2.1-.5.1-.7V9h.1c0-1.1-.9-2-2-2h-6.3l1-4.6v-.3c0-.4-.2-.8-.4-1.1l-1.1-1zM4 8H0v12h4V8zm18 1z"></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="heading u-border-top">
+          <h1 class="heading__main">Все еще сомневаетесь?</h1>
+          <h3 class="heading__descr">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</h3>
+        </div>
+        <section class="video">
+          <div class="video__videoplayer-container">
+            <video class="video__content" src="./video/sedvideo.mp4" muted></video>
+            <div class="video__controls">
+              <div class="video__progress">
+                <div class="video__progress-control"></div>
+              </div>
+              <div class="video__controls-bottom">
+                <svg class="video__controls-replay">
+                  <use xlink:href="./img/icons/symbol/sprite.svg#replay"></use>
+                </svg>
+                <div class="video__controls-bottom-right">
+                  <svg class="video__controls-subtitles">
+                    <use xlink:href="./img/icons/symbol/sprite.svg#subtitles"></use>
+                  </svg>
+                  <svg class="video__controls-fullscreen">
+                    <use xlink:href="./img/icons/symbol/sprite.svg#fullscreen"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer column-3">
+        <div class="footer__hashtag column-3__item">
+          <h4>#visitsedona</h4>
+        </div>
+        <div class="footer__social column-3__item"><a class="footer__social-item footer__social--tw" href="#" title="twitter">
+            <svg>
+              <use xlink:href="./img/icons/symbol/sprite.svg#icon-twitter"></use>
+            </svg></a><a class="footer__social-item footer__social--fb" href="#" title="facebook">
+            <svg>
+              <use xlink:href="./img/icons/symbol/sprite.svg#icon-facebook"></use>
+            </svg></a><a class="footer__social-item footer__social--yt" href="#" title="youtube">
+            <svg>
+              <use xlink:href="./img/icons/symbol/sprite.svg#icon-youtube"></use>
+            </svg></a></div>
+        <div class="footer__group column-3__item">
+          <div class="footer__group-container">
+            <h4>Разработано</h4>
+            <div class="footer__icon">
+              <svg>
+                <use xlink:href="./img/icons/symbol/sprite.svg#htmlacademy"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
