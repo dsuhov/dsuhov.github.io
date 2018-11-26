@@ -16,18 +16,29 @@
   </head>
   <body class="index-page">
     <div class="wrapper">
+      <aside class="side-nav">
+        <div class="side-nav__wrapper">
+          <ul class="side-nav__content">
+            <li class="side-nav__item side-nav__item--active" id="nav-header"><span class="side-nav__view-link">01</span></li>
+            <li class="side-nav__item" id="nav-portfolio"><span class="side-nav__view-link">02</span></li>
+            <li class="side-nav__item" id="nav-about"><span class="side-nav__view-link">03</span></li>
+            <li class="side-nav__item" id="nav-price"><span class="side-nav__view-link">04</span></li>
+            <li class="side-nav__item" id="nav-footer"><span class="side-nav__view-link">05</span></li>
+          </ul>
+        </div>
+      </aside>
       <header class="main-header" id="header">
         <div class="main-header__social-link"><a class="social-link" href="#" title="Instagram">Instagram — </a><a class="social-link" href="#" title="Facebook">Facebook</a></div>
         <nav class="main-nav">
-          <div class="main-nav__name"><a class="main-nav__name-link" href="#header" title="Вверх">voronina.</a></div>
+          <div class="main-nav__name" id="name"><a class="main-nav__name-link" href="#header" title="Вверх">voronina.</a></div>
           <div class="main-nav__toggle-btn-wrapper">
             <button class="main-nav__toggle-btn"></button>
           </div>
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a class="main-nav__link" href="#block-about" title="Обо мне">Портфолио</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#block-about" title="Обо мне">Обо мне</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#block-price" title="Стоимость">Стоимость</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#block-contacts" title="Контакты">Контакты</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#portfolio" title="Обо мне">Портфолио</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#about" title="Обо мне">Обо мне</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#price" title="Стоимость">Стоимость</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#footer" title="Контакты">Контакты</a></li>
           </ul>
           <div class="main-nav__tel">+ 7 916 66 77 112</div>
         </nav>
@@ -55,7 +66,7 @@
         </section>
       </header>
       <main class="index-main">
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
           <div class="portfolio__vert-dash vert-dash"></div>
           <div class="portfolio__title-wrapper">
             <div class="portfolio__title view-title"><span class="view-title__back">WORK</span>
@@ -67,7 +78,7 @@
               <figure class="portfolio__photo portfolio-photo portfolio-photo--415">
                 <picture>
                   <source type="image/webp" srcset="img/content/voronina-portfolio-img-1_414.webp 414w,img/content/voronina-portfolio-img-1_828.webp 828w,img/content/voronina-portfolio-img-1_1656.webp 1656w" sizes="(max-width: 375px) 90vw, (max-width: 674px) 31.5vw, (max-width: 1440px) 28vw">
-                  <source srcset="img/content/voronina-portfolio-img-1_414.jpg 414w,img/content/voronina-portfolio-img-1_828.jpg 828w,img/content/voronina-portfolio-img-1_1656.jpg 1656w" sizes="(max-width: 375px) 90vw, (max-width: 674px) 31.5vw, (max-width: 1440px) 28vw"><img alt="Фото еды" src="img/content/voronina-portfolio-img-1_828.jpeg">
+                  <source srcset="img/content/voronina-portfolio-img-1_414.jpg 414w,img/content/voronina-portfolio-img-1_828.jpg 828w,img/content/voronina-portfolio-img-1_1656.jpg 1656w" sizes="(max-width: 375px) 90vw, (max-width: 674px) 31.5vw, (max-width: 1440px) 28vw"><img alt="Фото еды" src="img/content/voronina-portfolio-img-1_828.jpg">
                 </picture>
                 <figcaption class="portfolio-photo__caption"><span class="portfolio-photo__hashtag">#соцсети</span><span class="portfolio-photo__descr">Фото контент для социальных сетей кондитерской «Леди Мармелад»</span></figcaption>
               </figure>
@@ -76,14 +87,14 @@
               <figure class="portfolio__photo portfolio-photo">
                 <picture>
                   <source type="image/webp" srcset="img/content/voronina-portfolio-img-2_414.webp 414w,img/content/voronina-portfolio-img-2_828.webp 828w,img/content/voronina-portfolio-img-2_1656.webp 1656w" sizes="(max-width: 375px) 90vw, (max-width: 674px) 31.5vw, (max-width: 1440px) 28vw">
-                  <source srcset="img/content/voronina-portfolio-img-2_414.jpg 414w,img/content/voronina-portfolio-img-2_828.jpg 828w,img/content/voronina-portfolio-img-2_1656.jpg 1656w" sizes="(max-width: 375px) 90vw, (max-width: 674px) 31.5vw, (max-width: 1440px) 28vw"><img alt="Фото еды" src="img/content/voronina-portfolio-img-2_828.jpeg">
+                  <source srcset="img/content/voronina-portfolio-img-2_414.jpg 414w,img/content/voronina-portfolio-img-2_828.jpg 828w,img/content/voronina-portfolio-img-2_1656.jpg 1656w" sizes="(max-width: 375px) 90vw, (max-width: 674px) 31.5vw, (max-width: 1440px) 28vw"><img alt="Фото еды" src="img/content/voronina-portfolio-img-2_828.jpg">
                 </picture>
                 <figcaption class="portfolio-photo__caption"><span class="portfolio-photo__hashtag">#соцсети</span><span class="portfolio-photo__descr">Фото контент для инстаграма ресторана «Funky Food»</span></figcaption>
               </figure>
               <figure class="portfolio__photo portfolio-photo">
                 <picture>
                   <source type="image/webp" srcset="img/content/voronina-portfolio-img-4_414.webp 414w,img/content/voronina-portfolio-img-4_828.webp 828w,img/content/voronina-portfolio-img-4_1656.webp 1656w" sizes="(max-width: 375px) 90vw, (max-width: 674px) 31.5vw, (max-width: 1440px) 28vw">
-                  <source srcset="img/content/voronina-portfolio-img-4_414.jpg 414w,img/content/voronina-portfolio-img-4_828.jpg 828w,img/content/voronina-portfolio-img-4_1656.jpg 1656w" sizes="(max-width: 375px) 90vw, (max-width: 674px) 31.5vw, (max-width: 1440px) 28vw"><img alt="Фото еды" src="img/content/voronina-portfolio-img-4_828.jpeg">
+                  <source srcset="img/content/voronina-portfolio-img-4_414.jpg 414w,img/content/voronina-portfolio-img-4_828.jpg 828w,img/content/voronina-portfolio-img-4_1656.jpg 1656w" sizes="(max-width: 375px) 90vw, (max-width: 674px) 31.5vw, (max-width: 1440px) 28vw"><img alt="Фото еды" src="img/content/voronina-portfolio-img-4_828.jpg">
                 </picture>
                 <figcaption class="portfolio-photo__caption"><span class="portfolio-photo__hashtag">#менюресторана</span><span class="portfolio-photo__descr">Съемка меню ресторана «Хорошая еда»</span></figcaption>
               </figure>
@@ -92,7 +103,7 @@
               <figure class="portfolio__photo portfolio-photo portfolio__photo--no-margin">
                 <picture>
                   <source type="image/webp" srcset="img/content/voronina-portfolio-img-3_414.webp 414w,img/content/voronina-portfolio-img-3_828.webp 828w,img/content/voronina-portfolio-img-3_1656.webp 1656w" sizes="(max-width: 375px) 90vw, (max-width: 674px) 31.5vw, (max-width: 1440px) 28vw">
-                  <source srcset="img/content/voronina-portfolio-img-3_414.jpg 414w,img/content/voronina-portfolio-img-3_828.jpg 828w,img/content/voronina-portfolio-img-3_1656.jpg 1656w" sizes="(max-width: 375px) 90vw, (max-width: 674px) 31.5vw, (max-width: 1440px) 28vw"><img alt="Фото еды" src="img/content/voronina-portfolio-img-3_828.jpeg">
+                  <source srcset="img/content/voronina-portfolio-img-3_414.jpg 414w,img/content/voronina-portfolio-img-3_828.jpg 828w,img/content/voronina-portfolio-img-3_1656.jpg 1656w" sizes="(max-width: 375px) 90vw, (max-width: 674px) 31.5vw, (max-width: 1440px) 28vw"><img alt="Фото еды" src="img/content/voronina-portfolio-img-3_828.jpg">
                 </picture>
                 <figcaption class="portfolio-photo__caption"><span class="portfolio-photo__hashtag">#рекламнаясъемка</span><span class="portfolio-photo__descr">Съемка для баннерной рекламной печати ресторана «Бранч»</span></figcaption>
               </figure>
@@ -104,8 +115,8 @@
             <picture class="compose-2__photo">
               <source type="image/webp" media="(max-width: 650px)" srcset="img/content/portfolio-img-6_1x.webp 1x, img/content/portfolio-img-6_2x.webp 2x, img/content/portfolio-img-6_3x.webp 3x">
               <source media="(max-width: 650px)" srcset="img/content/portfolio-img-6_1x.jpg 1x, img/content/portfolio-img-6_2x.jpg 2x, img/content/portfolio-img-6_3x.jpg 3x">
-              <source type="image/webp" srcset="img/content/voronina-portfolio-img-5_457.webp 457w,img/content/voronina-portfolio-img-5_915.webp 915w,img/content/voronina-portfolio-img-5_1830.webp 1830w" sizes="(max-width: 375px) 100vw, (max-width: 674px) 79vw, (max-width: 1440px) 42vw">
-              <source srcset="img/content/voronina-portfolio-img-5_457.jpg 457w,img/content/voronina-portfolio-img-5_915.jpg 915w,img/content/voronina-portfolio-img-5_1830.jpg 1830w" sizes="(max-width: 375px) 100vw, (max-width: 674px) 79vw, (max-width: 1440px) 42vw"><img alt="Фото еды" src="img/content/voronina-portfolio-img-5_915.jpeg" width="610">
+              <source type="image/webp" srcset="img/content/voronina-portfolio-img-5_457.webp 457w,img/content/voronina-portfolio-img-5_915.webp 915w,img/content/voronina-portfolio-img-5_1830.webp 1830w" sizes="(max-width: 1440px) 42vw,(max-width: 674px) 79vw,(max-width: 375px) 100vw">
+              <source srcset="img/content/voronina-portfolio-img-5_457.jpg 457w,img/content/voronina-portfolio-img-5_915.jpg 915w,img/content/voronina-portfolio-img-5_1830.jpg 1830w" sizes="(max-width: 375px) 100vw, (max-width: 674px) 79vw, (max-width: 1440px) 42vw"><img alt="Фото еды" src="img/content/voronina-portfolio-img-5_915.jpg" width="610">
             </picture>
             <div class="compose-2__text-block">
               <div class="compose-2__heading">Подробное портфолио</div>
@@ -114,7 +125,7 @@
             </div>
           </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
           <div class="about__vert-dash vert-dash"></div>
           <div class="about__title-wrapper">
             <div class="about__title view-title"><span class="view-title__back">ABOUT</span>
@@ -133,14 +144,14 @@
                 </div>
                 <div class="about__text-right">
                   <p class="about__simple-text about__simple-text--2">Всегда открыта к сотрудничеству и рада новым предложениям</p>
-                  <div class="about__contacts about__simple-text about__simple-text--3"> <span class="about__tel">Tel.: daria.voronina@gmail.com</span><span class="about__mail">Mail:<span class="about__semibold-text">+ 7 916 66 77 112</span></span></div>
+                  <div class="about__contacts about__simple-text about__simple-text--3"> <span class="about__tel">Tel.&nbsp;daria.voronina@gmail.com</span><span class="about__mail">Mail:&nbsp;<span class="about__semibold-text">+ 7 916 66 77 112</span></span></div>
                   <div class="about__link btn-link">РАБОТАТЬ СО МНОЙ  &mdash;</div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section class="price">
+        <section class="price" id="price">
           <div class="price__vert-dash vert-dash"></div>
           <div class="price__title-wrapper">
             <div class="price__title view-title"><span class="view-title__back">PRICE</span>
@@ -185,7 +196,9 @@
             </div>
           </div>
         </section>
-        <div class="footer">
+      </main>
+      <footer class="index-footer">
+        <div class="footer" id="footer">
           <div class="footer__vert-dash vert-dash"></div>
           <h2 class="footer__title">Свяжитесь со мной</h2>
           <div class="footer__contacts-wrapper">
@@ -212,7 +225,7 @@
                 <use xlink:href="img/svg/sprite.svg#icon-pn"></use>
               </svg></a></div>
         </div>
-      </main>
+      </footer>
     </div>
     <script src="js/main.js"></script>
   </body>
