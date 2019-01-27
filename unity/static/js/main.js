@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".js-feature-works").slick({variableWidth:!0,slidesToShow:2,prevArrow:".featured-works__nav--prev",nextArrow:".featured-works__nav--next"})});
