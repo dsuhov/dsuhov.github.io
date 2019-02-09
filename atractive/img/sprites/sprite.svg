@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0" style="position:absolute">
+	
+		<symbol id="arrow-1" viewBox="0 0 124.7 75.8">
+			<path d="M.1.5c21.9 6.4 50.8 17.3 77 34.8C97 48.5 111 60 120.4 71.5" opacity=".72" fill="none" stroke="#d695b3" stroke-dasharray="4,2"></path><path d="M114.7 72l10 3.8-3.8-10s.6 3.5-1.3 5c-1.8 1.5-4.9 1.2-4.9 1.2z" fill="#d695b3"></path>
+		</symbol>
+	
+		<symbol id="arrow-2" viewBox="0 0 297.2 58.5">
+			<path d="M297 49.1c-33.7 15.4-92.6 12.3-152.2-20.9C83.6-5.9 35.3-3.6 6 8.9" opacity=".72" fill="none" stroke="#d695b3" stroke-dasharray="4,2"></path><path d="M6.5 3.5L0 12l10.7-.7s-3.6-.4-4.4-2.7c-.9-2.2.2-5.1.2-5.1z" fill="#d695b3"></path>
+		</symbol>
+	
+		<symbol id="arrow-3" viewBox="0 0 133.6 65.8">
+			<path d="M.2.4c12.7 7.2 31 13.1 57.8 17.1 41.4 6.2 62.4 27.2 72.9 44.8" opacity=".72" fill="none" stroke="#d695b3" stroke-dasharray="4,2"></path><path d="M124.3 60.5l9.3 5.3-2.1-10.5s.1 3.6-2 4.7c-2.1 1.2-5.2.5-5.2.5z" fill="#d695b3"></path>
+		</symbol>
+	
+		<symbol id="envelope" viewBox="0 0 96 75.7">
+			<style>.st0{fill:#883eca}</style><title>Artboard 82</title><path class="st0" d="M3.1 3.4C1.1 5.5 0 8.2 0 11.1v53.5c0 2.9 1.1 5.6 3.1 7.7 2.1 2.2 5 3.4 8 3.4h73.8c6.1 0 11.1-5 11.1-11.1V11.1C96 5 91 0 84.9 0H11.1c-3 0-5.9 1.3-8 3.4zm11.8 11.9c1.3-1.4 3.4-1.5 4.9-.3L48 39.8l28.2-24.7c1.5-1.3 3.7-1.1 4.9.3 1.2 1.4 1.1 3.4-.1 4.7l-16.7 17 16.8 18.8c1.3 1.5 1.1 3.7-.3 4.9s-3.4 1.1-4.7-.1L58.4 43.2l-4.8 4.9c-1.5 1.4-3.5 2.2-5.6 2.2-2.1 0-4.1-.8-5.6-2.2l-4.8-4.9-17.7 17.4c-1.4 1.3-3.6 1.3-4.9 0s-1.3-3.4-.1-4.7l16.8-18.7L15 20.1c-1.3-1.3-1.3-3.4-.1-4.8z"></path>
+		</symbol>
+	
+		<symbol id="line-4" viewBox="0 0 493.3 287.7">
+			<path d="M0 230.1s33.5 2 69-13 78.5-37 139-2 18 90.5-19 66c-30.5-20.2 2-80 64-80s125.3 19.4 181-18c88-59 51-183 51-183" opacity=".8" fill="none" stroke="#d695b3" stroke-dasharray="4,2"></path>
+		</symbol>
+	
+		<symbol id="location" viewBox="0 0 25 38">
+			<style>.st0{fill:#883eca}</style><path class="st0" d="M12.5 38C11.5 38 0 19.3 0 12.4S5.6 0 12.5 0 25 5.6 25 12.4 12.8 38 12.5 38zm0-31.5c-3.3 0-5.9 2.6-5.9 5.9s2.6 5.9 5.9 5.9 5.9-2.6 5.9-5.9-2.6-5.9-5.9-5.9z"></path>
+		</symbol>
+	
+		<symbol id="mouse" viewBox="0 0 21 33">
+			<style>.st0,.st1{fill-rule:evenodd;clip-rule:evenodd;fill:none;stroke:#000;stroke-miterlimit:10}.st1{stroke-width:2}</style><path class="st0" d="M10.5 8c.3 0 .5.2.5.5v4c0 .3-.2.5-.5.5s-.5-.2-.5-.5v-4c0-.3.2-.5.5-.5z"></path><path class="st1" d="M10.5 1c5.2 0 9.5 4.3 9.5 9.5v12c0 5.2-4.3 9.5-9.5 9.5S1 27.7 1 22.5v-12C1 5.3 5.3 1 10.5 1z"></path>
+		</symbol>
+	
+		<symbol id="paper-plane" viewBox="0 0 512 454.2">
+			<style>.st0{fill:#c6cbcb}.st1{fill:#d672ad}.st3{fill:#e2e5e7}.st4{fill:#ea8ebc}</style><path class="st0" d="M0 0l331.2 419.5 29.4-99.9z"></path><path class="st1" d="M231.5 205.2l-22.8 59.2 122.5 155.1 29.4-99.9z"></path><path fill="#d1d5d5" d="M331.2 419.5l-30.5-74.7L0 0l267 366.9z"></path><path class="st3" d="M300.7 344.8L128.3 454.2 0 0zm59.9-25.2L0 0l512 253.4z"></path><path class="st4" d="M182.6 209.5l-58.8 228.7 4.5 16 172.5-109.5zm308.3 33.4l-259.4-37.7 129 114.8L512 253.4z"></path><path class="st1" d="M182.6 209.5l-58.8 228.7 67.5-218.8zm48.9-4.3l11.5 10.2 247.9 27.5z"></path><path class="st0" d="M300.8 344.7l-34.1 21.7 26.1 21.6z"></path><path class="st4" d="M12.7 45L23 26.4 0 0zm15.2-20.3l23.2.6L0 0z"></path>
+		</symbol>
+	
+		<symbol id="phone" viewBox="0 0 71.5 71.6">
+			<style>.st0{fill:#883eca}</style><path class="st0" d="M24.8 56.7c16.4 16.4 29 20.5 43.8 5.7 2.3-2.4 4.5-5.4 1.4-8.5l-12-9.2c-3.8-2-5.3-.6-7.1 1.4-6.6 7.3-13.6 4.9-18.4 0L25.4 39c-4.9-4.7-7.3-11.8 0-18.4 2-1.8 3.5-3.3 1.4-7.1l-9.2-12c-3.1-3.1-6.1-.9-8.5 1.4-14.7 14.9-10.6 27.5 5.8 43.9l9.9 9.9z"></path>
+		</symbol>
+	
+</svg>
