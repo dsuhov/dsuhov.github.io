@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/started.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+    <link rel="stylesheet" href="assets/css/jquery.formstyler.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Payment Method</title>
+  </head>
+  <body class="payment-method body" style="overflow: auto;">
+    <!-- Header -->
+    <header class="header" id="header">
+      <div class="container">
+        <nav><img class="header_logo" src="assets/img/header_logo.svg" alt="Логотип">
+          <ul class="site_navigation">
+            <li><a href="#">home</a></li>
+            <li><a href="#">discussion</a></li>
+            <li><a href="#">campaign</a></li>
+            <li><a href="#">faq</a></li>
+          </ul><a class="btn btn-circle btn-column bt-1" href="#">45 <br><span>days left</span></a><a class="btn btn-circle bt-2" href="#">login</a><a class="btn btn-circle bt-3" href="#"><img src="assets/img/user.png" alt=""></a>
+        </nav>
+      </div>
+    </header>
+    <!-- Header End -->
+    <div class="payment-method__content">
+      <div class="payment-method__title">Please, select a payment method</div>
+      <div class="payment-method__anon-donation anon-donation">
+        <input class="anon-donation__checkbox" type="checkbox" name="Anonymous donation is ON" id="is-anonimous">
+        <label class="anon-donation__label" for="is-anonimous"><span class="anon-donation__label-text">I’d like to stay anonymous</span></label>
+        <div class="anon-donation__isChecked-mark">
+          <svg class="svg-sprite-icon icon-tick anon-donation__isChecked-mark-tick">
+            <use xlink:href="assets/img/svg/symbol/sprite.svg#tick"></use>
+          </svg>
+        </div>
+        <div class="anon-donation__title">Anonymous donation</div>
+        <div class="anon-donation__mark"><sup>*</sup> your details will be hidden from everyone</div>
+        <div class="anon-donation__mark anon-donation__mark--hide"><sup>*</sup> your name will <b>NOT</b> appear on the founders wall either</div>
+      </div>
+      <div class="anon-donation__payment"><a class="anon-donation__link" href="" target="_blank">
+          <svg class="svg-sprite-icon icon-paypal-logo-in-rectangular-black-card anon-donation__payment-icon">
+            <use xlink:href="assets/img/svg/symbol/sprite.svg#paypal-logo-in-rectangular-black-card"></use>
+          </svg></a><a class="anon-donation__link" href="" target="_blank">
+          <svg class="svg-sprite-icon icon-mastercard anon-donation__payment-icon">
+            <use xlink:href="assets/img/svg/symbol/sprite.svg#mastercard"></use>
+          </svg></a><a class="anon-donation__link" href="" target="_blank">
+          <svg class="svg-sprite-icon icon-visa-pay-logo anon-donation__payment-icon">
+            <use xlink:href="assets/img/svg/symbol/sprite.svg#visa-pay-logo"></use>
+          </svg></a></div>
+    </div>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/jquery.formstyler.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

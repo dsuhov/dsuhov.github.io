@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/started.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+    <link rel="stylesheet" href="assets/css/jquery.formstyler.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Sign Up</title>
+  </head>
+  <body class="signup body" style="overflow: auto;">
+    <!-- Header -->
+    <header class="header" id="header">
+      <div class="container">
+        <nav><img class="header_logo" src="assets/img/header_logo.svg" alt="Логотип">
+          <ul class="site_navigation">
+            <li><a href="#">home</a></li>
+            <li><a href="#">discussion</a></li>
+            <li><a href="#">campaign</a></li>
+            <li><a href="#">faq</a></li>
+          </ul><a class="btn btn-circle btn-column bt-1" href="#">45 <br><span>days left</span></a><a class="btn btn-circle bt-2" href="#">login</a><a class="btn btn-circle bt-3" href="#"><img src="assets/img/user.png" alt=""></a>
+        </nav>
+      </div>
+    </header>
+    <!-- Header End -->
+    <div class="signup-page">
+      <div class="signup-page__title">Thank you for your interest! <br/>Please, sign up.</div>
+      <form class="signup-page__form form" action="" method="post">
+        <div class="signup-page__input-group">
+          <div class="signup-page__input-wrapper signup-page__isValid">
+            <input class="form__input" type="email" name="email" placeholder="E-mail" required>
+            <div class="signup-page__valid-marker signup-page__valid-marker--true"></div>
+          </div>
+          <div class="signup-page__input-wrapper signup-page__isValid">
+            <input class="form__input" type="text" name="username" placeholder="Username" required>
+            <div class="signup-page__valid-marker signup-page__valid-marker--false"></div>
+          </div>
+          <div class="signup-page__input-wrapper">
+            <input class="form__input" type="password" name="password" placeholder="Password" required>
+          </div>
+          <div class="signup-page__input-wrapper">
+            <input class="form__input" type="password" name="password-confirmation" placeholder="Password" required>
+          </div>
+          <div class="signup-page__input-wrapper">
+            <input class="form__input" type="text" name="country" placeholder="Country" required>
+          </div>
+        </div>
+        <div class="signup-page__radiobuttons">
+          <div class="signup-page__radiobuttons-title">I am a…</div>
+          <div class="signup-page__radiobuttons-block">
+            <div class="signup-page__radiobuttons-line">
+              <input class="signup-page__radio-btn form__radiohidden" type="radio" name="i_am_a[]" value="producer" id="producer">
+              <label class="form__rado-label signup-page__label" for="producer">Producer</label>
+              <input class="signup-page__radio-btn form__radiohidden" type="radio" name="i_am_a[]" value="dj" id="dj">
+              <label class="form__rado-label signup-page__label" for="dj">DJ</label>
+              <input class="signup-page__radio-btn form__radiohidden" type="radio" name="i_am_a[]" value="subscriber" id="subscriber">
+              <label class="form__rado-label signup-page__label" for="subscriber">Subscriber</label>
+            </div>
+            <div class="signup-page__radiobuttons-line">
+              <input class="signup-page__radio-btn form__radiohidden" type="radio" name="i_am_a[]" value="artist" id="artist">
+              <label class="form__rado-label signup-page__label" for="artist">Artist</label>
+              <input class="signup-page__radio-btn form__radiohidden" type="radio" name="i_am_a[]" value="journalist" id="journalist">
+              <label class="form__rado-label signup-page__label" for="journalist">Journalist</label>
+              <input class="signup-page__radio-btn form__radiohidden" type="radio" name="i_am_a[]" value="other" id="other">
+              <label class="form__rado-label signup-page__label" for="other">Other</label>
+            </div>
+          </div>
+        </div>
+        <div class="signup-page__signInWith-block">
+          <div class="signup-page__signInWith-btn">share it</div>
+          <div class="signup-page__signInWith-line"><a class="signup-page__signInWith-socials" href="" title="facebook">
+              <svg class="svg-sprite-icon icon-facebook signup-page__signInWith-icon">
+                <use xlink:href="assets/img/svg/symbol/sprite.svg#facebook"></use>
+              </svg></a><a class="signup-page__signInWith-socials" href="" title="twitter">
+              <svg class="svg-sprite-icon icon-twitter-logo signup-page__signInWith-icon">
+                <use xlink:href="assets/img/svg/symbol/sprite.svg#twitter-logo"></use>
+              </svg></a><a class="signup-page__signInWith-socials" href="" title="instagram">
+              <svg class="svg-sprite-icon icon-instagram-2 signup-page__signInWith-icon">
+                <use xlink:href="assets/img/svg/symbol/sprite.svg#instagram-2"></use>
+              </svg></a><a class="signup-page__signInWith-socials" href="" title="email">
+              <svg class="svg-sprite-icon icon-email signup-page__signInWith-icon">
+                <use xlink:href="assets/img/svg/symbol/sprite.svg#email"></use>
+              </svg></a></div>
+        </div>
+        <input class="form__submit signup-page__submit" type="submit" value="SIGN UP">
+      </form>
+    </div>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/jquery.formstyler.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

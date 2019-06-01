@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Protected Area"
+AuthUserFile /home//users/j/j944472/domains/j944472.myjino.ru/.htpasswd
+Require valid-user
