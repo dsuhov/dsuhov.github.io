@@ -29,7 +29,9 @@ $(document).ready(function () {
     modernSoftSlider();
     reviewsTabsInit();
     reviewsSliderInit();
-    playerControlSettings();
+    yamapsInit();
+    fancyboxInitLogic();
+    navLine();
   }
 }); // Полифилы
 // forEach IE 11
@@ -226,14 +228,29 @@ function modernSoftSlider() {
 
 function reviewsTabsInit() {
   var tabsContainer = $('.reviews-slide-tabs');
+
+  if (window.matchMedia('(max-width: 950px)').matches) {
+    $('.reviews-slide-tabs__block--1.reviews-slide-tabs__block--open .reviews-slide-tabs__content').slideDown();
+  }
+
   tabsContainer.each(function (_) {
     $(tabsContainer[_]).find('.reviews-slide-tabs__block').each(function (el) {
       $(this).find('.reviews-slide-tabs__btn').each(function () {
         var _this = this;
 
         this.addEventListener('click', function () {
-          $(_this).closest('.reviews-slide-tabs').find('.reviews-slide-tabs__block').removeClass('reviews-slide-tabs__block--active');
-          $(_this).parent().addClass('reviews-slide-tabs__block--active');
+          if (window.matchMedia('(max-width: 950px)').matches) {
+            $(_this).next().slideToggle();
+
+            if ($(_this).parent().hasClass('reviews-slide-tabs__block--open')) {
+              $(_this).parent().removeClass('reviews-slide-tabs__block--open');
+            } else {
+              $(_this).parent().addClass('reviews-slide-tabs__block--open');
+            }
+          } else {
+            $(_this).closest('.reviews-slide-tabs').find('.reviews-slide-tabs__block').removeClass('reviews-slide-tabs__block--active');
+            $(_this).parent().addClass('reviews-slide-tabs__block--active');
+          }
         });
       });
     });
@@ -245,9 +262,11 @@ function reviewsSliderInit() {
   var navBtns = $('.rev-block__nav-item');
   slider.slick({
     infinite: false,
-    arrows: false,
+    arrows: true,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    prevArrow: '#slider-arrow__rev-block--prev',
+    nextArrow: '#slider-arrow__rev-block--next'
   });
   navBtns.click(function () {
     navBtns.removeClass('rev-block__nav-item--active');
@@ -257,12 +276,61 @@ function reviewsSliderInit() {
   });
 }
 
-function playerControlSettings() {// var player = new OpenPlayer('player_1', false, {
-  //   controls: {
-  //     left: ['play', 'time', 'volumes'],
-  //     middle: ['progress'],
-  //     right: ['captions', 'settings', 'fullscreen'],
-  //   },
-  // });
-  // player.init();
+function yamapsInit() {
+  ymaps.ready(init);
+
+  function init() {
+    var myMap = new ymaps.Map("yaMap", {
+      center: [55.736731, 37.712946],
+      zoom: 15,
+      controls: ['smallMapDefaultSet']
+    }, {
+      searchControlProvider: 'yandex#search'
+    });
+    var myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+      hintContent: 'Мастер-РМ',
+      balloonContent: 'г. Москва, ул.Смирновская, д.25, стр.10'
+    }, {
+      iconLayout: 'default#image',
+      iconImageHref: 'static/images/general/map-pin.png',
+      iconImageSize: [148, 160],
+      iconImageOffset: [-74, -80]
+    });
+    myMap.geoObjects.add(myPlacemark);
+  }
+}
+
+; // Fancybox
+
+function fancyboxInitLogic() {
+  // Set fancybox close btn
+  $.fancybox.defaults.btnTpl.smallBtn = '<button type="button" data-fancybox-close class="close-btn" title="{{CLOSE}}"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.292969 13.293L13.293 0.292969L14.7072 1.70718L1.70718 14.7072L0.292969 13.293Z" fill="#2F7EEF"/><path fill-rule="evenodd" clip-rule="evenodd" d="M14.707 13.293L1.70703 0.292969L0.292818 1.70718L13.2928 14.7072L14.707 13.293Z" fill="#2F7EEF"/></svg></button>'; // Open quiz on Calc Price Button
+
+  var calcPriceBtn = document.getElementById('ms-calc-price');
+  var quizCopy = document.getElementById('quiz-form').cloneNode(true);
+  quizCopy.id = quizCopy.id + '-copy';
+  var quizWrapper = document.createElement('div');
+  quizWrapper.classList.add('quizPopup');
+  quizWrapper.appendChild(quizCopy);
+  calcPriceBtn.addEventListener('click', function () {
+    $.fancybox.open('<div>' + quizWrapper.innerHTML + '</div>');
+  });
+} // navigation line
+
+
+function navLine() {
+  var scrollActive = false;
+  var navLine = document.querySelector('.header__navigation');
+  var headerEl = document.querySelector('.header');
+  window.addEventListener('scroll', function (evt) {
+    if (window.pageYOffset > 0 && !scrollActive) {
+      scrollActive = true;
+      navLine.classList.add('floating');
+      headerEl.classList.add('floating');
+    } else if (window.pageYOffset === 0 && scrollActive) {
+      scrollActive = false;
+      navLine.classList.remove('floating');
+      headerEl.classList.remove('floating');
+    }
+  });
 }
