@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Мастер-РМ</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/datepicker.material.css"><!--[if lt IE 9]>
+<![endif]-->
+  </head>
+  <body id="page-thank-you">
+    <div class="wrapper">
+      <div class="sectioning" id="thank-you">
+        <div class="sectioning__top-line-wrapper">
+          <div class="sectioning__top-line">
+            <div class="top-line">
+              <div class="top-line__logo"><a class="header-logo" href="#header"><img class="header-logo__logo" src="static/images/general/head-logo.svg" alt="Мастер-РМ. Любая техника для офиса">
+                  <p class="header-logo__descrition">25 лет делаем печать <br>эффективнее и выгоднее</p></a></div>
+              <div class="top-line__navigation">
+                <div class="head-nav">
+                  <nav class="head-nav__nav">
+                    <ul class="head-nav__list">
+                      <li class="head-nav__item"><a class="head-nav__link" href="#how-it-works">Как это работает?</a></li>
+                      <li class="head-nav__item"><a class="head-nav__link" href="#projects">Проекты</a></li>
+                      <li class="head-nav__item"><a class="head-nav__link" href="#solutions">Решения</a></li>
+                      <li class="head-nav__item"><a class="head-nav__link" href="#about">О компании</a></li>
+                    </ul>
+                  </nav>
+                  <div class="head-nav__free-test-btn">
+                                    <button class="faint-border-btn" id="free-test">Бесплатный тест</button>
+                  </div>
+                </div>
+              </div>
+              <div class="top-line__phone"><a class="head-phone" href="tel:+74959166464">
+                  <div class="head-phone__icon">
+                    <svg class="svg-sprite-icon icon-phone">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#phone"></use>
+                    </svg>
+                  </div>
+                  <div class="head-phone__number gilroy-bold-20-24">+7 495 916-64-64</div></a></div>
+              <div class="top-line__mobile-nav">
+                <div class="burger">
+                  <div class="burger__top"></div>
+                  <div class="burger__middle"></div>
+                  <div class="burger__bottom"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sectioning__main">
+          <div class="routing">
+            <h1 class="routing__heading futpt-medium-60-66">Мы получили вашу <br>заявку и в скором времени <br>свяжемся с вами</h1>
+            <p class="routing__text futpt-normal-18-25">Узнайте больше о системах управления печатью на <br>нашем информационном сайта</p>
+            <ul class="routing__buttons routing__buttons--ty">
+              <li class="routing__button"><a class="turquoise-btn turquoise-btn--72 futpt-demi-14-18--uppercase" href="#" id="routing-ty-more">узнать больше</a>
+              </li>
+            </ul>
+            <div class="routing__all"><a class="routing__all-link futpt-normal-18-25" href="all.html">Вернутся на предыдущую страницу</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="popups">
+        <div class="popup-hidden" id="popup-left-phone">
+          <div class="popup-container">
+            <div class="popup">
+              <div class="popup__close">
+                <div class="close-btn">
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292969 13.293L13.293 0.292969L14.7072 1.70718L1.70718 14.7072L0.292969 13.293Z" fill="#2F7EEF"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.707 13.293L1.70703 0.292969L0.292818 1.70718L13.2928 14.7072L14.707 13.293Z" fill="#2F7EEF"></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="popup-photo">
+                <div class="popup-photo__pic-block">
+                  <div class="popup-photo__name futpt-demi-24-31">Александр Петров</div>
+                  <div class="popup-photo__position futpt-normal-18-23">Руководитель отдела <br>по внедрению СУП <br>компании Мастер-М</div>
+                </div>
+                <div class="popup-photo__inner">
+                  <div class="popup-photo__title popup__title">Оставьте ваш <span class="em-blue">телефон</span></div>
+                  <div class="popup-photo__subtitle">
+                    <div class="popup-photo__little-pic lazyBg" data-bg="url('static/images/general/ns-man_small.jpg')"></div>
+                    <div class="popup__subtitle">Я перезвоню в удобное для вас время и <br>отвечу на все интересующие вопросы.</div>
+                  </div>
+                  <form class="popup-photo__form" action="" method="post" id="popup-photo-form">
+                    <div class="popup-photo__choose-time-radio">
+                      <div class="choose-time-radio">
+                        <div class="choose-time-radio__heading">Выберите удобное время звонка</div>
+                        <div class="choose-time-radio__line">
+                          <div class="choose-time-radio__btn">
+                            <label>
+                              <input type="radio" name="Choose-time" value="Сейчас" checked>
+                              <div class="choose-time-radio__pimp"></div><span class="choose-time-radio__text futpt-normal-18-25-tuna">Сейчас</span>
+                            </label>
+                          </div>
+                          <div class="choose-time-radio__btn">
+                            <label>
+                              <input type="radio" name="Choose-time" value="Ко времени">
+                              <div class="choose-time-radio__pimp"></div><span class="choose-time-radio__text futpt-normal-18-25-tuna">Ко времени</span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="popup-photo__choose-time-field popup-mb20">
+                      <div class="time-field">
+                        <input class="time-field__field" type="text" name="input_date">
+                        <div class="time-field__icon">
+                          <svg class="svg-sprite-icon icon-calendar">
+                            <use xlink:href="static/images/svg/symbol/sprite.svg#calendar"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="popup-photo__phone-field popup-mb20">
+                              <div class="input-field-block">
+                                <input class="input-field input-field--popup-phone input-field--grey-border input-field--popup input-field--64" type="tel" id="popup-photo-inpphone" name="telephone">
+                              </div>
+                    </div>
+                    <div class="popup-photo__submit-btn">
+                              <button class="turquoise-btn turquoise-btn--72 futpt-demi-14-18--uppercase" id="left-phone-popup-submit" name="sumbit" type="submit" value="заказать звонок">заказать звонок</button>
+                    </div>
+                    <div class="popup-photo__accept-conf">
+                      <div class="popup-accept-conf">
+                        <label class="popup-accept-conf__ac-label">
+                          <input class="popup-accept-conf__ac-checkbox" type="checkbox" name="accept-conf" checked>
+                          <div class="popup-accept-conf__ac-icon popup-accept-conf__ac-icon--unchecked">
+                            <svg class="svg-sprite-icon icon-white-checkbox">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#white-checkbox"></use>
+                            </svg>
+                          </div>
+                          <div class="popup-accept-conf__ac-icon popup-accept-conf__ac-icon--checked">
+                            <svg class="svg-sprite-icon icon-white-checkbox-checked">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#white-checkbox-checked"></use>
+                            </svg>
+                          </div><span>Согласен с Политикой конфиденциальности сайта</span>
+                        </label>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup-hidden" id="popup-popup-questionnaire">
+          <div class="popup-container">
+            <div class="popup">
+              <div class="popup__close">
+                <div class="close-btn">
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292969 13.293L13.293 0.292969L14.7072 1.70718L1.70718 14.7072L0.292969 13.293Z" fill="#2F7EEF"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.707 13.293L1.70703 0.292969L0.292818 1.70718L13.2928 14.7072L14.707 13.293Z" fill="#2F7EEF"></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="popup-questionnaire">
+                <div class="popup-questionnaire__letter lazyBg" data-bg="url('static/images/general/Letterhead.png')"></div>
+                <div class="popup-questionnaire__glare lazyBg" data-bg="url('static/images/general/Ellipse76.png')"></div><a class="popup-questionnaire__pdf" href="#">
+                  <svg class="svg-sprite-icon icon-mdi_file-excel">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#mdi_file-excel"></use>
+                  </svg><span>3,4 MB</span></a>
+                <div class="popup-questionnaire__main">
+                  <div class="popup-questionnaire__title"><span class="em-blue">На какую почту</span> прислать <br>опросный лист?</div>
+                  <div class="popup-questionnaire__subtitle futpt-normal-24-34-tuna">с полным перечнем функций и техническим описанием.</div>
+                  <form class="popup-questionnaire__form" action="" method="post">
+                    <div class="popup-questionnaire__email popup-mb20">
+                              <div class="input-field-block">
+                                <input class="input-field input-field--questionnaire-email input-field--grey-border input-field--popup input-field--64" type="email" id="questionnaire-email" name="email" placeholder="Pochta@mail.ru" autocomplete="off">
+                              </div>
+                    </div>
+                    <div class="popup-questionnaire__btn">
+                              <button class="turquoise-btn turquoise-btn--72 futpt-demi-14-18--uppercase" id="questionnairepopup-submit" name="sumbit" type="submit" value="получить презентацию">получить презентацию</button>
+                    </div>
+                    <div class="popup-questionnaire__acc-conf">
+                      <div class="popup-accept-conf">
+                        <label class="popup-accept-conf__ac-label">
+                          <input class="popup-accept-conf__ac-checkbox" type="checkbox" name="accept-conf" checked>
+                          <div class="popup-accept-conf__ac-icon popup-accept-conf__ac-icon--unchecked">
+                            <svg class="svg-sprite-icon icon-white-checkbox">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#white-checkbox"></use>
+                            </svg>
+                          </div>
+                          <div class="popup-accept-conf__ac-icon popup-accept-conf__ac-icon--checked">
+                            <svg class="svg-sprite-icon icon-white-checkbox-checked">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#white-checkbox-checked"></use>
+                            </svg>
+                          </div><span>Согласен с Политикой конфиденциальности сайта</span>
+                        </label>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup-hidden" id="popup-free-test">
+          <div class="popup-container">
+            <div class="popup">
+              <div class="popup__close">
+                <div class="close-btn">
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292969 13.293L13.293 0.292969L14.7072 1.70718L1.70718 14.7072L0.292969 13.293Z" fill="#2F7EEF"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.707 13.293L1.70703 0.292969L0.292818 1.70718L13.2928 14.7072L14.707 13.293Z" fill="#2F7EEF"></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="free-test popup-photo">
+                <div class="popup-photo__pic-block">
+                  <div class="popup-photo__name futpt-demi-24-31">Александр Петров</div>
+                  <div class="popup-photo__position futpt-normal-18-23">Руководитель отдела <br>по внедрению СУП <br>компании Мастер-М</div>
+                </div>
+                <div class="free-test__inner">
+                  <div class="free-test__title popup__title">30 дней <br><span class="em-blue">бесплатного теста</span></div>
+                  <div class="free-test__text-block">
+                    <p class="free-test__paragraph-1">Предлагаем пилотный проект, в рамках которого мы бесплатно внедрим в вашей компании систему управления печатью.</p>
+                    <p class="free-test__paragraph-2">Вы сможете потестировать все функции <br>в течение месяца без ограничений <br>и лично убедиться в эффективности системы.</p>
+                  </div>
+                  <form class="free-test__form" action="" method="post" id="popup-free-test">
+                    <div class="free-test__phone-field popup-mb20">
+                              <div class="input-field-block">
+                                <input class="input-field input-field--popup-free-test input-field--grey-border input-field--popup input-field--64" type="tel" id="popup-free-test" name="telephone">
+                              </div>
+                    </div>
+                    <div class="free-test__submit-btn">
+                              <button class="turquoise-btn turquoise-btn--72 futpt-demi-14-18--uppercase" id="free-test-popup-submit" name="sumbit" type="submit" value="забронировать бесплатный тест">забронировать бесплатный тест</button>
+                    </div>
+                    <div class="free-test__accept-conf">
+                      <div class="popup-accept-conf">
+                        <label class="popup-accept-conf__ac-label">
+                          <input class="popup-accept-conf__ac-checkbox" type="checkbox" name="accept-conf" checked>
+                          <div class="popup-accept-conf__ac-icon popup-accept-conf__ac-icon--unchecked">
+                            <svg class="svg-sprite-icon icon-white-checkbox">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#white-checkbox"></use>
+                            </svg>
+                          </div>
+                          <div class="popup-accept-conf__ac-icon popup-accept-conf__ac-icon--checked">
+                            <svg class="svg-sprite-icon icon-white-checkbox-checked">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#white-checkbox-checked"></use>
+                            </svg>
+                          </div><span>Согласен с Политикой конфиденциальности сайта</span>
+                        </label>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup-hidden" id="popup-places">
+          <div class="popup-container">
+            <div class="popup">
+              <div class="popup__close">
+                <div class="close-btn">
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292969 13.293L13.293 0.292969L14.7072 1.70718L1.70718 14.7072L0.292969 13.293Z" fill="#2F7EEF"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.707 13.293L1.70703 0.292969L0.292818 1.70718L13.2928 14.7072L14.707 13.293Z" fill="#2F7EEF"></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="popup-places">
+                <div class="popup-places__title popup__title"><span class="em-blue">Найдем уязвимые места</span> <br>в вашей инфраструктуре <br>печати и поможем закрыть их</div>
+                <div class="popup-places__main">
+                  <div class="popup-places__col">
+                    <div class="popup-places__subtitle futpt-normal-24-34-tuna">Вы получите аудит инфраструктуры <br>печати вашей компании по 78 <br>параметрам. Вы получите:</div>
+                    <div class="popup-places__item popup-mb42">
+                      <div class="popup-places__icon">
+                        <svg class="svg-sprite-icon icon-data-security">
+                          <use xlink:href="static/images/svg/symbol/sprite.svg#data-security"></use>
+                        </svg>
+                      </div>
+                      <p class="futpt-normal-18-25-tuna">Правила печати в организации, которые помогут надежно защитить конфиденциальные документы.</p>
+                    </div>
+                    <div class="popup-places__item">
+                      <div class="popup-places__icon">
+                        <svg class="svg-sprite-icon icon-paper">
+                          <use xlink:href="static/images/svg/symbol/sprite.svg#paper"></use>
+                        </svg>
+                      </div>
+                      <p class="futpt-normal-18-25-tuna">Рекомендации по снижению издержек печати: сокращение парка техники, ограничение цветности, перенос бумажных документов в электронные форматы</p>
+                    </div>
+                  </div>
+                  <div class="popup-places__col">
+                    <div class="popup-places__faint-title">Оставьте свой телефон, чтобы мы могли <br>перезвонить вам и договориться об <br>удобном времени аудита.</div>
+                    <form class="popup-places__form" action="" method="post">
+                      <div class="popup-places__name-field popup-mb20">
+                                <div class="input-field-block">
+                                  <input class="input-field input-field--popup-places-name input-field--grey-border input-field--popup input-field--64" type="text" id="popup-places-name" name="username" placeholder="Как вас зовут?" autocomplete="off">
+                                </div>
+                      </div>
+                      <div class="popup-places__phone popup-mb20">
+                                <div class="input-field-block">
+                                  <input class="input-field input-field--popup-places input-field--grey-border input-field--popup input-field--64" type="tel" id="popup-places-phone" name="telephone">
+                                </div>
+                      </div>
+                      <div class="popup-places__btn">
+                                <button class="turquoise-btn turquoise-btn--72 futpt-demi-14-18--uppercase" id="popup-places-popup-submit" name="sumbit" type="submit" value="забронировать бесплатный тест">забронировать бесплатный тест</button>
+                      </div>
+                      <div class="popup-places__accept-conf">
+                        <div class="popup-accept-conf">
+                          <label class="popup-accept-conf__ac-label">
+                            <input class="popup-accept-conf__ac-checkbox" type="checkbox" name="accept-conf" checked>
+                            <div class="popup-accept-conf__ac-icon popup-accept-conf__ac-icon--unchecked">
+                              <svg class="svg-sprite-icon icon-white-checkbox">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#white-checkbox"></use>
+                              </svg>
+                            </div>
+                            <div class="popup-accept-conf__ac-icon popup-accept-conf__ac-icon--checked">
+                              <svg class="svg-sprite-icon icon-white-checkbox-checked">
+                                <use xlink:href="static/images/svg/symbol/sprite.svg#white-checkbox-checked"></use>
+                              </svg>
+                            </div><span>Согласен с Политикой конфиденциальности сайта</span>
+                          </label>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup-hidden" id="popup-get-presentation">
+          <div class="popup-container">
+            <div class="popup">
+              <div class="popup__close">
+                <div class="close-btn">
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292969 13.293L13.293 0.292969L14.7072 1.70718L1.70718 14.7072L0.292969 13.293Z" fill="#2F7EEF"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.707 13.293L1.70703 0.292969L0.292818 1.70718L13.2928 14.7072L14.707 13.293Z" fill="#2F7EEF"></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="get-presentation">
+                <div class="get-presentation__glare lazyBg" data-bg="url('static/images/general/popup-gp-glare.png')"></div>
+                <div class="get-presentation__paper lazyBg" data-bg="url('static/images/general/pgp-paper.png')"></div><a class="get-presentation__pdf" href="#">
+                  <svg class="svg-sprite-icon icon-bx_bxs-file-pdf">
+                    <use xlink:href="static/images/svg/symbol/sprite.svg#bx_bxs-file-pdf"></use>
+                  </svg><span>3,4 MB</span></a>
+                <div class="get-presentation__main">
+                  <div class="get-presentation__title">Укажите вашу почту и <br><span class="em-blue">получите презентацию <br>решения</span> через 1 минуту</div>
+                  <div class="get-presentation__subtitle futpt-normal-24-34-tuna">с полным перечнем функций и <br>техническим описанием.</div>
+                  <form class="get-presentation__form" action="" method="post">
+                    <div class="get-presentation__email-field popup-mb20">
+                              <div class="input-field-block">
+                                <input class="input-field input-field--get-presentation-email input-field--grey-border input-field--popup input-field--64" type="email" id="get-presentation-email" name="email" placeholder="Pochta@mail.ru" autocomplete="off">
+                              </div>
+                    </div>
+                    <div class="get-presentation__btn">
+                              <button class="turquoise-btn turquoise-btn--72 futpt-demi-14-18--uppercase" id="get-presentation-popup-submit" name="sumbit" type="submit" value="получить презентацию">получить презентацию</button>
+                    </div>
+                    <div class="get-presentation__acc-conf">
+                      <div class="popup-accept-conf">
+                        <label class="popup-accept-conf__ac-label">
+                          <input class="popup-accept-conf__ac-checkbox" type="checkbox" name="accept-conf" checked>
+                          <div class="popup-accept-conf__ac-icon popup-accept-conf__ac-icon--unchecked">
+                            <svg class="svg-sprite-icon icon-white-checkbox">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#white-checkbox"></use>
+                            </svg>
+                          </div>
+                          <div class="popup-accept-conf__ac-icon popup-accept-conf__ac-icon--checked">
+                            <svg class="svg-sprite-icon icon-white-checkbox-checked">
+                              <use xlink:href="static/images/svg/symbol/sprite.svg#white-checkbox-checked"></use>
+                            </svg>
+                          </div><span>Согласен с Политикой конфиденциальности сайта</span>
+                        </label>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="get-presentation__paper-2 lazyBg" data-bg="url('static/images/general/pgp-paper-2.png')"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="static/js/jquery-3.3.1.min.js"></script>
+    <script src="static/js/libs.min.js"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>
