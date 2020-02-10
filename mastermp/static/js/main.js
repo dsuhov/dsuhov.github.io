@@ -21,11 +21,19 @@ $(document).ready(function () {
   burgerAction();
   new LazyLoad({
     elements_selector: ".lazy"
-  });
+  }); // Remove phone app action on desktop
 
   if (window.matchMedia("(min-width: 769px)").matches) {
     $('.head-phone, .phone-block__phone').click(function (evt) {
       evt.preventDefault();
+      $.fancybox.open({
+        src: '#popup-left-phone',
+        type: 'inline',
+        closeExisting: true,
+        smallBtn: false,
+        buttons: [],
+        autoFocus: false
+      });
     });
   }
 
@@ -70,7 +78,7 @@ $(document).ready(function () {
   }
 
   initDatepicker();
-  initInputmask();
+  initInputmask(); // reviewsShowMore();
 }); // Полифилы
 // forEach IE 11
 
@@ -151,7 +159,7 @@ function burgerAction() {
     }
   }
 
-  if (window.matchMedia("(max-width: 768px)").matches) {
+  if (window.matchMedia("(max-width: 1280px)").matches) {
     $(headNavEl).find('a').click(function () {
       burgerElement.click();
     });
@@ -258,7 +266,8 @@ function modernSoftSlider() {
     draggable: false,
     accessibility: false,
     swipeToSlide: false,
-    touchMove: false
+    touchMove: false,
+    adaptiveHeight: true
   };
   sliderElement.slick(slickParams);
   dataSliderElement.slick(ds_slickParams);
@@ -271,7 +280,11 @@ function modernSoftSlider() {
         el.classList.add("active");
       });
     });
-  });
+  }); // dataSliderElement.on('afterChange', (evt, _, currentSlide) => {
+  //   $(logoControlElements).removeClass('active');
+  //   $(logoControlElements[currentSlide]).addClass('active');
+  // });
+
   dataSliderElement.on('afterChange', function (evt, _, currentSlide) {
     $(logoControlElements).removeClass('active');
     $(logoControlElements[currentSlide]).addClass('active');
@@ -354,19 +367,17 @@ function yamapsInit() {
 
 
 function fancyboxInitLogic() {
-  // Set fancybox close btn
-  $.fancybox.defaults.btnTpl.smallBtn = '<button type="button" data-fancybox-close class="close-btn" title="{{CLOSE}}"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.292969 13.293L13.293 0.292969L14.7072 1.70718L1.70718 14.7072L0.292969 13.293Z" fill="#2F7EEF"/><path fill-rule="evenodd" clip-rule="evenodd" d="M14.707 13.293L1.70703 0.292969L0.292818 1.70718L13.2928 14.7072L14.707 13.293Z" fill="#2F7EEF"/></svg></button>'; // Open quiz on Calc Price Button
+  var headerBtn = document.getElementById('header-btn'); // Open quiz on Calc Price Button
 
   var calcPriceBtn = document.getElementById("ms-calc-price");
   var quizCopy = document.getElementById("quiz-form").cloneNode(true);
   quizCopy.id = quizCopy.id + "-copy";
   var quizWrapper = document.createElement("div");
   quizWrapper.classList.add("quizPopup");
-  quizWrapper.appendChild(quizCopy); // const phoneInput = quizWrapper.querySelector('#quiz-form-copy input[name="telephone"]');
-  // console.log(ddsg);
-  // 
+  quizWrapper.appendChild(quizCopy);
 
-  calcPriceBtn.addEventListener("click", function () {
+  var quizPopuphandler = function quizPopuphandler(e) {
+    e.preventDefault();
     $.fancybox.open("<div>" + quizWrapper.innerHTML + "</div>", {
       afterShow: function afterShow(instance, current) {
         var phoneInput = current.$slide[0].querySelector('input[name="telephone"]');
@@ -375,9 +386,30 @@ function fancyboxInitLogic() {
           lazy: false
         });
         validPhone([phoneInput]);
-      }
+        current.$slide[0].querySelector('.quiz-form__quiz-list-link').addEventListener('click', function (e) {
+          e.preventDefault();
+          $.fancybox.open({
+            src: '#popup-popup-questionnaire',
+            type: 'inline',
+            closeExisting: true,
+            hideScrollbar: false,
+            smallBtn: false,
+            buttons: [],
+            autoFocus: false,
+            touch: {
+              vertical: true
+            }
+          });
+        });
+      },
+      smallBtn: false,
+      autoFocus: false,
+      hideScrollbar: false
     });
-  });
+  };
+
+  calcPriceBtn.addEventListener("click", quizPopuphandler);
+  headerBtn.addEventListener("click", quizPopuphandler);
 } // navigation line
 
 
@@ -386,14 +418,18 @@ function navLine() {
   var navLine = document.querySelector(".header__navigation");
   var headerEl = document.querySelector(".header");
   window.addEventListener("scroll", function (evt) {
-    if (window.pageYOffset > 0 && !scrollActive) {
+    if (window.pageYOffset > 1000 && !scrollActive) {
       scrollActive = true;
       navLine.classList.add("floating");
       headerEl.classList.add("floating");
-    } else if (window.pageYOffset === 0 && scrollActive) {
+    } else if (window.pageYOffset <= 1000 && scrollActive) {
       scrollActive = false;
-      navLine.classList.remove("floating");
-      headerEl.classList.remove("floating");
+      navLine.classList.add("hiding");
+      setTimeout(function () {
+        navLine.classList.remove("floating");
+        navLine.classList.remove("hiding");
+        headerEl.classList.remove("floating");
+      }, 220);
     }
   });
 }
@@ -452,7 +488,6 @@ function initInputmask() {
   var phoneInputs = document.querySelectorAll('input[name="telephone"]');
 
   _toConsumableArray(phoneInputs).forEach(function (el) {
-    // el.setAttribute('value', '+7 ');
     IMask(el, {
       mask: '{+7} (000) 000-00-00',
       lazy: false
@@ -466,16 +501,12 @@ function validPhone(inputs) {
   var regex = /\d+/g; // safary fix
 
   for (var i = 0; i < inputs.length; i++) {
-    // inputs[i].addEventListener('blur', inputErrHandler);
-    inputs[i].closest('form').querySelector('button[type="submit"]').addEventListener('click', inputErrHandler(inputs[i])); // console.log(inputs[i].closest('form').querySelector('button[type="submit"]'));
+    inputs[i].closest('form').querySelector('button[type="submit"]').addEventListener('click', inputErrHandler(inputs[i]));
   }
-
-  function checkPhoneValidity(evt) {}
 
   function inputErrHandler(inpEl) {
     return function (evt) {
       if (inpEl.value.length !== 18 || isSameNumbers(inpEl.value)) {
-        // evt.preventDefault();
         inpEl.setCustomValidity('Неверный формат номера!');
       } else {
         inpEl.setCustomValidity('');
@@ -490,6 +521,10 @@ function validPhone(inputs) {
       return true;
     }
 
+    if (digits === '1234567890') {
+      return true;
+    }
+
     return digits.split('').every(function (el, i, arr) {
       if (i > 0) {
         return arr[i - 1] === el;
@@ -501,17 +536,22 @@ function validPhone(inputs) {
 }
 
 function hangPopups() {
-  // todo: make btns mapping
   var btnToPopup = [['#popup-free-test', ['#free-test', '#rev-block-turquoise-btn', '#next-step-card-30-days-free']], ['#popup-get-presentation', ['.modern-soft__get-presentation']], ['#popup-popup-questionnaire', ['.quiz-form__quiz-list-link']], ['#popup-places', ['#weak-spots-btn', '#next-step-card-order-audit', '#get-audit-btn']], ['#popup-left-phone', ['#next-step-card-get-consult']]];
   btnToPopup.forEach(function (pair) {
     pair[1].forEach(function (button) {
-      $(button).click(function () {
+      $(button).click(function (evt) {
+        evt.preventDefault();
         $.fancybox.open({
           src: pair[0],
           type: 'inline',
           closeExisting: false,
           smallBtn: false,
-          buttons: []
+          buttons: [],
+          autoFocus: false,
+          touch: {
+            vertical: true,
+            momentum: false
+          }
         });
       });
     });
@@ -522,7 +562,7 @@ function hangPopups() {
 }
 
 function scrollToActions() {
-  var links = ['.header-logo', '#header-btn', '.head-nav__link'];
+  var links = ['.header-logo', '.head-nav__link'];
   links.forEach(function (el) {
     $(el).click(scrollToaction);
   });
@@ -537,4 +577,22 @@ function scrollToActions() {
       }, 800);
     }
   }
-}
+} // Show More Actions
+// function reviewsShowMore() {
+//   const showMoreBtn = document.getElementById('show-more-remivews');
+//   const cardsConts = document.querySelectorAll('.audio-cards__column');
+//   const audioCards = [
+//     filterShown(cardsConts[0].querySelectorAll('.audio-cards__card')),
+//     filterShown(cardsConts[1].querySelectorAll('.audio-cards__card'))
+//   ];
+//
+//   console.log(audioCards);
+//
+//
+//   function filterShown(nList) {
+//     return Array.from(nList).filter(el => {
+//       console.log(el)
+//       return !el.classList.contains('show');
+//     })
+//   }
+// }
